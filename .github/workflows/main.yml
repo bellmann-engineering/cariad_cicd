@@ -24,3 +24,12 @@ jobs:
       
     - name: Run the application
       run: ./HelloWorld
+
+    - name: Zip the executable
+      run: zip setup.zip HelloWorld
+      
+    - name: Upload build artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: setup-zip
+        path: ./setup.zip
