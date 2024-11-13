@@ -1,9 +1,9 @@
 #include <iostream>
 
-int main() {
+auto main() -> int {
 
-  int e = 7;
-  for(int i=0; i<e; i++) {
+  int end = 7;
+  for(int i=0; i<end; i++) {
     std::cout << "Hello World" << std::endl;
   }
   
